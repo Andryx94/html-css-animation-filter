@@ -32,31 +32,29 @@ body .row .col-xs-12 .well .ex-3-square:hover {
 
 /* esercizio #4 */
 body .row .col-xs-12 .well .ex-4-square {
+  opacity: 1;
+  transition: opacity 2s;
 }
 
 body .row .col-xs-12 .well .ex-4-square:hover {
+  opacity: 0;
+  transition: opacity 2s;
 }
 
 /* esercizio #5 */
 body .row .col-xs-12 .well .ex-5-square {
-  margin: 20px;
-  width: 60px;
-  height: 60px;
-  transition: width 2s, height 2s;
+  transform: scale(1);
+  transition: transform 2s;
 }
 
 body .row .col-xs-12 .well .ex-5-square:hover {
-  margin: 0;
-  width: 100px;
-  height: 100px;
-  transition: margin 2s, width 2s, height 2s;
+  transform: scale(2);
+  transition: transform 2s;
 }
 
 body .row .col-xs-12 .well .ex-5-square:active {
-  margin: 0;
-  width: 20px;
-  height: 20px;
-  transition: margin 2s, width 2s, height 2s;
+  transform: scale(0.5);
+  transition: transform 2s;
 }
 
 /* esercizio #6 */
@@ -88,18 +86,129 @@ body .row .col-xs-12 .well .ex-8-img:hover {
 
 /* esercizio #9 */
 body .row .col-xs-12 .well .ex-9-img {
-  margin: 50px 100px;
   filter: none;
   border-radius: 0;
-  width: 60%;
-  height: 60%;
-  transition: filter 2s, border-radius 2s, width 2s, height 2s;
+  transform: scale(1);
+  transition: filter 2s, border-radius 2s, transform 2s;
 }
 body .row .col-xs-12 .well .ex-9-img:hover {
-  margin: 0;
   filter: brightness(50%) grayscale(80%) ;
   border-radius: 20px;
-  width: 80%;
-  height: 80%;
-  transition: margin 2s, filter 2s, border-radius 2s, width 2s, height 2s;
+  transform: scale(1.5);
+  transition: filter 2s, border-radius 2s, transform 2s;
+}
+
+/* esercizio #10 */
+body .row .col-xs-12 .well .ex-10-icon {
+  animation-name: rotation100;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotation100 {
+  0% {transform: rotate(1turn);}
+}
+
+/* esercizio #11 */
+body .row .col-xs-12 .well .ex-11-icon:hover {
+  animation-name: rotation75;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+}
+
+@keyframes rotation75 {
+  0% {transform: rotate(0turn);}
+  25% {transform: rotate(0.25turn);}
+  50% {transform: rotate(0.5turn);}
+  75% {transform: rotate(0.85turn);} /* non ho messo 0.75 turn perchè non arriverebbe effettivamente a 3/4 */
+  100% {transform: rotate(0turn);}
+}
+
+/* esercizio #12 */
+body .row .col-xs-12 .well .ex-12-button:hover .ex-12-top-white {
+  animation-name: leftright;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+}
+
+@keyframes leftright {
+  0% {left: 20px;}
+  50% {left: 130px;}
+  100% {left: 20px;}
+}
+
+body .row .col-xs-12 .well .ex-12-button:hover .ex-12-bottom-white {
+  animation-name: rightleft;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+}
+
+@keyframes rightleft {
+  0% {right: 35px;}
+  50% {right: 130px;}
+  100% {right: 35px;}
+}
+
+/* esercizio #13 */
+body .row .col-xs-12 .well .ex-13-button:hover .ex-13-top-white {
+  animation-name: leftright100;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+
+@keyframes leftright100 {
+  0% {
+    left: 20px;
+  }
+  30% {
+    left: 180px;
+    top: -10px;
+  }
+  45% {
+    left: 180px;
+    top: 50px;
+  }
+  70% {
+    left: -20px;
+    top: 50px;
+  }
+  90% {
+    left: -20px;
+    top: -10px;
+  }
+  100% {
+    left: 20px;
+  }
+}
+
+body .row .col-xs-12 .well .ex-13-button:hover .ex-13-bottom-white {
+  animation-name: rightleft100;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+
+@keyframes rightleft100 {
+  0% {
+    right: 35px;
+  }
+  30% {
+    right: 150px;
+    bottom: -10px;
+  }
+  45% {
+    right: 160px;
+    bottom: 50px;
+  }
+  70% {
+    right: -20px;
+    bottom: 50px;
+  }
+  90% {
+    right: -20px;
+    bottom: -10px;
+  }
+  100% {
+    right: 35px;
+  }
 }
