@@ -1,0 +1,105 @@
+/* esercizio #1 */
+body .row .col-xs-12 .well .ex-1-square {
+  background-color: none;
+  transition: background-color 2s;
+}
+
+body .row .col-xs-12 .well .ex-1-square:hover {
+  background-color: red;
+  transition: background-color 2s;
+}
+
+/* esercizio #2 */
+body .row .col-xs-12 .well .ex-2-square {
+  width: 15%;
+  transition: width 2s;
+}
+body .row .col-xs-12 .well .ex-2-square:active {
+  width: 100%;
+  transition: width 2s;
+}
+
+/* esercizio #3 */
+body .row .col-xs-12 .well .ex-3-square {
+  border-radius: 0%;
+  transition: border-radius 2s;
+}
+
+body .row .col-xs-12 .well .ex-3-square:hover {
+  border-radius: 50%;
+  transition: border-radius 2s;
+}
+
+/* esercizio #4 */
+body .row .col-xs-12 .well .ex-4-square {
+}
+
+body .row .col-xs-12 .well .ex-4-square:hover {
+}
+
+/* esercizio #5 */
+body .row .col-xs-12 .well .ex-5-square {
+  margin: 20px;
+  width: 60px;
+  height: 60px;
+  transition: width 2s, height 2s;
+}
+
+body .row .col-xs-12 .well .ex-5-square:hover {
+  margin: 0;
+  width: 100px;
+  height: 100px;
+  transition: margin 2s, width 2s, height 2s;
+}
+
+body .row .col-xs-12 .well .ex-5-square:active {
+  margin: 0;
+  width: 20px;
+  height: 20px;
+  transition: margin 2s, width 2s, height 2s;
+}
+
+/* esercizio #6 */
+body .row .col-xs-12 .well .ex-6-img:hover {
+  filter: grayscale(1);
+}
+
+/* esercizio #7 */
+body .row .col-xs-12 .well .ex-7-img {
+  filter: none;
+  transition: filter 2s;
+}
+body .row .col-xs-12 .well .ex-7-img:hover {
+  filter: sepia(30%) saturate(400%);
+  transition: filter 2s;
+}
+
+/* esercizio #8 */
+body .row .col-xs-12 .well .ex-8-img {
+  filter: none;
+  border-radius: 0;
+  transition: filter 2s, border-radius 2s;
+}
+body .row .col-xs-12 .well .ex-8-img:hover {
+  filter: sepia(100%) contrast(1000%);
+  border-radius: 20px;
+  transition: filter 2s, border-radius 2s;
+}
+
+/* esercizio #9 */
+body .row .col-xs-12 .well .ex-9-img {
+  margin: 50px 100px;
+  filter: none;
+  border-radius: 0;
+  width: 60%;
+  height: 60%;
+  transition: filter 2s, border-radius 2s, width 2s, height 2s;
+}
+body .row .col-xs-12 .well .ex-9-img:hover {
+  margin: 0;
+  filter: brightness(50%) grayscale(80%) ;
+  border-radius: 20px;
+  width: 80%;
+  height: 80%;
+  transition: margin 2s, filter 2s, border-radius 2s, width 2s, height 2s;
+}
